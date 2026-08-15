@@ -5,7 +5,7 @@ services:
       - "8085:8085"
     restart: unless-stopped
   fitmi-activity:
-    image: registry.gitlab.com/fit-projects/fitmi-activity-service:e0716200
+    image: registry.gitlab.com/fit-projects/fitmi-activity-service:862deec2
     ports:
       - "8086:8086"
     restart: unless-stopped
