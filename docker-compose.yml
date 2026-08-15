@@ -10,7 +10,7 @@ services:
       - "8086:8086"
     restart: unless-stopped
   fitmi-vue:
-    image: registry.gitlab.com/fit-projects/fitmi-vue:8c7a8760
+    image: registry.gitlab.com/fit-projects/fitmi-vue:latest
     ports:
       - "80:80"
     restart: unless-stopped
