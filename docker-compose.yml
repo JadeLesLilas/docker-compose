@@ -5,12 +5,12 @@ services:
       - "8085:8085"
     restart: unless-stopped
   fitmi-activity:
-    image: registry.gitlab.com/fit-projects/fitmi-activity-service:862deec2
+    image: registry.gitlab.com/fit-projects/fitmi-activity-service:e2771a0b
     ports:
       - "8086:8086"
     restart: unless-stopped
   fitmi-vue:
-    image: registry.gitlab.com/fit-projects/fitmi-vue:62853faa
+    image: registry.gitlab.com/fit-projects/fitmi-vue:8c7a8760
     ports:
       - "80:80"
     restart: unless-stopped
