@@ -9,3 +9,11 @@ services:
     ports:
       - "8086:8086"
     restart: unless-stopped
+  fitmi-vue:
+    image: registry.gitlab.com/fit-projects/fitmi-vue:latest
+    ports:
+      - "80:80"
+    restart: unless-stopped
+    depends_on:
+      - fitmi-user
+      - fitmi-activity
