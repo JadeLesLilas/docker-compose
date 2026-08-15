@@ -1,6 +1,6 @@
 services:
   fitmi-user:
-    image: registry.gitlab.com/fit-projects/fitmi-user-service:7ecf67de
+    image: registry.gitlab.com/fit-projects/fitmi-user-service:561dbc51
     ports:
       - "8085:8085"
     restart: unless-stopped
