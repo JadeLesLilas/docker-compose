@@ -4,11 +4,16 @@ services:
     ports:
       - "8085:8085"
     restart: unless-stopped
+    mem_limit: 512m
+    environment:
+      JAVA_TOOL_OPTIONS: "-Xms128m -Xmx320m"
   fitmi-activity:
     image: registry.gitlab.com/fit-projects/fitmi-activity-service:e0fb5bbb
     ports:
       - "8086:8086"
     restart: unless-stopped
+    environment:
+      JAVA_TOOL_OPTIONS: "-Xms128m -Xmx320m"
   fitmi-vue:
     image: registry.gitlab.com/fit-projects/fitmi-vue:86ee6c25
     ports:
