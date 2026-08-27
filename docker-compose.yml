@@ -8,7 +8,7 @@ services:
     environment:
       JAVA_TOOL_OPTIONS: "-Xms128m -Xmx320m"
   fitmi-activity:
-    image: registry.gitlab.com/fit-projects/fitmi-activity-service:937859b0
+    image: registry.gitlab.com/fit-projects/fitmi-activity-service:bb2d7998
     ports:
       - "8086:8086"
     restart: unless-stopped
