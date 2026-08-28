@@ -15,7 +15,7 @@ services:
     environment:
       JAVA_TOOL_OPTIONS: "-Xms128m -Xmx320m"
   fitmi-vue:
-    image: registry.gitlab.com/fit-projects/fitmi-vue:38c16721
+    image: registry.gitlab.com/fit-projects/fitmi-vue:90393a28
     ports:
       - "80:80"
     restart: unless-stopped
