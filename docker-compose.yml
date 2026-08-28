@@ -16,12 +16,11 @@ services:
       JAVA_TOOL_OPTIONS: "-Xms128m -Xmx320m"
   fitmi-vue:
     image: registry.gitlab.com/fit-projects/fitmi-vue:90393a28
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
     ports:
       - "80:80"
     restart: unless-stopped
     depends_on:
       - fitmi-user
       - fitmi-activity
-      services:
-    volumes:
-      - ./nginx.conf:/etc/nginx/nginx.conf:ro
