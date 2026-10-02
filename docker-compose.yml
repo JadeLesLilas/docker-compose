@@ -15,7 +15,7 @@ services:
     environment:
       JAVA_TOOL_OPTIONS: "-Xms128m -Xmx320m"
   fitmi-vue:
-    image: registry.gitlab.com/fit-projects/fitmi-vue:4d16f47a
+    image: registry.gitlab.com/fit-projects/fitmi-vue:7bf55ad3
     volumes:
       - ./nginx.conf:/etc/nginx/nginx.conf:ro
     ports:
