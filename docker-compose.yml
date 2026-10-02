@@ -1,6 +1,6 @@
 services:
   fitmi-user:
-    image: registry.gitlab.com/fit-projects/fitmi-user-service:65f5b66a
+    image: registry.gitlab.com/fit-projects/fitmi-user-service:b271f93e
     ports:
       - "8085:8085"
     restart: unless-stopped
@@ -15,7 +15,7 @@ services:
     environment:
       JAVA_TOOL_OPTIONS: "-Xms128m -Xmx320m"
   fitmi-vue:
-    image: registry.gitlab.com/fit-projects/fitmi-vue:0857274f
+    image: registry.gitlab.com/fit-projects/fitmi-vue:671f99df
     volumes:
       - ./nginx.conf:/etc/nginx/nginx.conf:ro
     ports:
